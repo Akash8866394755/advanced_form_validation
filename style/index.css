@@ -1,0 +1,130 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+* {
+    font-family: Poppins;
+    outline: none;
+}
+#header
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container {
+    display: flex;
+
+}
+#card {
+    width: 400px;
+    border-radius: 3px;
+    margin: 50px 200px;
+}
+#card form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+label {
+    color: #323232;
+}
+#input-field input {
+    width: 80% !important;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#firstname-field, #lastname-field, #email-field, #password-field {
+    position: relative;
+}
+#firstname-wrn, #lastname-wrn, #email-wrn, #password-wrn {
+    position: absolute;
+    top: 0;
+    right: 80px;
+    display: none;
+}
+#firstname-message, #lastname-message, #email-message, #password-message {
+    display: none;
+    color: red;
+    font-weight: 600;
+}
+#password-hint {
+    width: 80% !important;
+    height: auto;
+    border-top: 1px solid #323232;
+    border-left: 1px solid #323232;
+    border-right: 1px solid #323232;
+    border-top: none;
+    position: relative;
+    top:0px;
+    right: 0px;
+    display: none;
+
+}
+#password-header, #password-hint-text {
+    padding: 0;
+    margin: 0;
+    line-height: 30px;
+    
+}
+#password-hint-text:hover {
+    background: pink;
+    cursor: pointer;
+    
+}
+
+#checkbox {
+    position: relative;
+    top: 10px;
+    right: 150px;
+    background: red;cursor: pointer;
+}
+#checkbox-message {
+    position: relative;
+    top: -15px;
+    margin-left:20px;
+}
+#btn {
+    padding: 10px 30px;
+    color: white;
+    background: dodgerblue;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    width: fit-content;
+    margin: 12px 0;
+    box-shadow: 0 0 10px 0 #ddd;
+    font-weight: 700;
+}
+#lower-case, #upper-case, #number, #special-symbol {
+    display: none;
+    color: red;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+}
+#title {
+    font-size: 18px;
+    text-align: center;
+    margin: 22px 0px;
+    font-weight: 500;
+    color: dodgerblue;
+
+}
+#img {
+    position: fixed;
+    top: 50%;
+    left:80%;
+    transform: translate(-50%,-50%);
+}
+
